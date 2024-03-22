@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Chirpy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-03-22T14:13:19-04:00</updated>
+  <updated>2024-03-22T15:02:27-04:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,83 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Process Injection</title>
+    <link href="http://localhost:4000/posts/ProcessInjection/" rel="alternate" type="text/html" title="Process Injection" />
+    <published>2024-03-22T10:28:00-04:00</published>
+  
+    <updated>2024-03-22T10:28:00-04:00</updated>
+  
+    <id>http://localhost:4000/posts/ProcessInjection/</id>
+    <content src="http://localhost:4000/posts/ProcessInjection/" />
+    <author>
+      <name>alexis</name>
+    </author>
+
+  
+    
+    <category term="Windows" />
+    
+    <category term="AVBypass" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      What is Process Injection
+
+
+  As described by MITRE, process injection is a method of executing arbitrary code in the address space of a separate live process. Running code in the context of another process may allow access to the process’s memory, system/network resources, and possibly elevated privileges. Execution via process injection may also evade detection from security products since th...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Windows Memory</title>
+    <link href="http://localhost:4000/posts/WindowsMemory/" rel="alternate" type="text/html" title="Windows Memory" />
+    <published>2024-03-22T10:25:00-04:00</published>
+  
+    <updated>2024-03-22T10:25:00-04:00</updated>
+  
+    <id>http://localhost:4000/posts/WindowsMemory/</id>
+    <content src="http://localhost:4000/posts/WindowsMemory/" />
+    <author>
+      <name>alexis</name>
+    </author>
+
+  
+    
+    <category term="Windows" />
+    
+    <category term="Memory" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      How does the Windows Memory work ?
+
+
+    </summary>
+  
+
+  </entry>
 
 </feed>
 
