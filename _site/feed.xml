@@ -4,16 +4,16 @@
   <id>http://localhost:4000/</id>
   <title>Chirpy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-03-22T15:02:27-04:00</updated>
+  <updated>2024-03-23T12:11:34-04:00</updated>
   <author>
-    <name>your_full_name</name>
+    <name>Alexis Peralta</name>
     <uri>http://localhost:4000/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
-  <rights> © 2024 your_full_name </rights>
+  <rights> © 2024 Alexis Peralta </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
@@ -89,7 +89,9 @@
 
       How does the Windows Memory work ?
 
+Everybody knows what the RAM memory is, but how does it work ? In general, computer processors (CPU) are constantly making read and write operations. If this was done on the disk (SSD or HDD) constantly the computer would be very slow. That is why an intermediate place to store data was required.
 
+Memory is a physical storage used by CPUs to store data that i...
     </summary>
   
 
