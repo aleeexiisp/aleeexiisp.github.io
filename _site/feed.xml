@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Alexis' Blog</title>
   <subtitle>Cybersecurity Blog</subtitle>
-  <updated>2024-03-27T05:57:24-04:00</updated>
+  <updated>2024-03-27T12:09:09-04:00</updated>
   <author>
     <name>Alexis Peralta</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,48 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Boot Process</title>
+    <link href="http://localhost:4000/posts/BootProcess/" rel="alternate" type="text/html" title="Boot Process" />
+    <published>2024-03-27T06:00:00-04:00</published>
+  
+    <updated>2024-03-27T06:00:00-04:00</updated>
+  
+    <id>http://localhost:4000/posts/BootProcess/</id>
+    <content src="http://localhost:4000/posts/BootProcess/" />
+    <author>
+      <name>alexis</name>
+    </author>
+
+  
+    
+    <category term="Windows" />
+    
+    <category term="Boot" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      1. What does Booting Mean ? 💻
+
+
+  Basic Input/Output System (BIOS) or Unified Extensible Firmware Interface (UEFI) main function is to initialise the hardware components and start the Operating System. The firmware then takes care of configuring and ensuring a proper hardware state. RAM, Disks, motherboard, graphics card.
+
+
+Booting is the process of switching the computer ON and starting the op...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -63,7 +105,7 @@
     <link href="http://localhost:4000/posts/WindowsMemory/" rel="alternate" type="text/html" title="Windows Memory" />
     <published>2024-03-22T10:25:00-04:00</published>
   
-    <updated>2024-03-27T05:42:41-04:00</updated>
+    <updated>2024-03-27T06:16:42-04:00</updated>
   
     <id>http://localhost:4000/posts/WindowsMemory/</id>
     <content src="http://localhost:4000/posts/WindowsMemory/" />

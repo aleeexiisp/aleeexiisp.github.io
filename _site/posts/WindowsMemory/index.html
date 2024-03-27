@@ -45,7 +45,7 @@
 <meta name="twitter:site" content="@aalexisp_" />
 <meta name="twitter:creator" content="@aalexisp_" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Alexis Peralta","url":"https://aleeexiisp.github.io/about/"},"dateModified":"2024-03-27T05:42:41-04:00","datePublished":"2024-03-22T10:25:00-04:00","description":"How does the Windows Memory work ?","headline":"Windows Memory","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/WindowsMemory/"},"url":"http://localhost:4000/posts/WindowsMemory/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Alexis Peralta","url":"https://aleeexiisp.github.io/about/"},"dateModified":"2024-03-27T06:16:42-04:00","datePublished":"2024-03-22T10:25:00-04:00","description":"How does the Windows Memory work ?","headline":"Windows Memory","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/WindowsMemory/"},"url":"http://localhost:4000/posts/WindowsMemory/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -533,158 +533,6 @@
 
 
 
-  
-  
-
-  
-    
-      
-      
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
-
-  
-
 
 <!-- Add header for code snippets -->
 
@@ -729,17 +577,6 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
 
     
   
@@ -748,173 +585,10 @@
   
 
   
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
-  
 
   
   
 
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
   
 
   
@@ -973,7 +647,7 @@
 
 <time
   
-  data-ts="1711532561"
+  data-ts="1711534602"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -1025,9 +699,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1132 words"
+  title="321 words"
 >
-  <em>6 min</em> read</span>
+  <em>1 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -1045,133 +719,6 @@
 <p>Let’s first delve into the whole process of memory usage from boot to running the user context to properly understand it. Bear in mind that I will be explaining all complex concepts at the beggining of each section so that everything is made clearer.</p>
 
 <p>To begin with, in order to understand memory, it is important to make clear where does it start. How the computers use memory to boot and start ?</p>
-
-<h2 id="1-booting-process"><span class="me-2">1. Booting Process</span><a href="#1-booting-process" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<blockquote>
-  <p><code class="language-plaintext highlighter-rouge">Basic Input/Output System (BIOS)</code> or <code class="language-plaintext highlighter-rouge">Unified Extensible Firmware Interface (UEFI)</code> main function is to initialize the hardware components and start the Operating System. The firmware then takes care of configuring and ensuring a proper hardware state. RAM, Disks, motherboard, graphics card.</p>
-</blockquote>
-
-<p><code class="language-plaintext highlighter-rouge">Booting</code> is the process of switching the computer ON and starting the operating system. The proces, consists in 6 steps:</p>
-
-<ol>
-  <li>BIOS and Program Setup</li>
-  <li>Power-On-Self-Test (POST)</li>
-  <li>Operating System Load</li>
-  <li>Boot Loader Execution</li>
-  <li>Kernel Initialization</li>
-  <li>Logon/Graphical Interface</li>
-</ol>
-
-<p>The following process describes how the BIOS Legacy works. On modern systems, UEFI is utilised and uses different techniques to provide a more secure and efficient boot. I will start explaning BIOS and will expand with UEFI.</p>
-
-<h3 id="11-basic-inputoutput-system-bios"><span class="me-2">1.1 Basic Input/Output System (BIOS)</span><a href="#11-basic-inputoutput-system-bios" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<blockquote>
-  <p>A <code class="language-plaintext highlighter-rouge">REGISTER</code> is a physical component of CPUs that are small and are intended for fast storage. They are used to store operands, intermediate results, memory addresses and other data required by the CPU. They are crutial to execute instructions efficiently. (Arithmetic instructions)</p>
-</blockquote>
-
-<blockquote>
-  <p>A <code class="language-plaintext highlighter-rouge">CPU runs instructions sequentially</code>, i.e. first moving one value to a register, then adding 1 to that register, etc.</p>
-</blockquote>
-
-<blockquote>
-  <p><code class="language-plaintext highlighter-rouge">JUMP</code> is an assembly instruction that lets the CPU/program know the place from which needs to start reading instructions. If some code I want to execute starts in 0xFFFF10 and the CPU is currently executing instructions sequentially at 0x120321, if the next instruction is a JUMP 0xFFFF10, the CPU will start running instructions at that memory address.</p>
-</blockquote>
-
-<blockquote>
-  <p><code class="language-plaintext highlighter-rouge">Read-Only Memory (ROM)</code> is a non-volatile memory, which means that it retains its contents even when power is turned off. It is a physical chip that is commonly found on motherboards. They contain firmware or instructions that are essential for booting up the system and performing basic input/output operations. This memory and can only be written once and is then read-only.</p>
-</blockquote>
-
-<blockquote>
-  <p>A <code class="language-plaintext highlighter-rouge">Boot Loader</code> is a small program that resides in the system’s firmware or in a dedicated boot partition. Its primary function is to load the Operating System into memory and start its execution. It handles the transition from the firmware’s execution to the operating system’s execution.</p>
-</blockquote>
-
-<h4 id="1-bios-and-pogram-setup"><span class="me-2">1. BIOS and Pogram Setup</span><a href="#1-bios-and-pogram-setup" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<ol>
-  <li>When the computer is first started, the CPU executes a harcoded JUMP instruction from a CPU register.</li>
-  <li>The CPU jumps to a predefined memory location in the <code class="language-plaintext highlighter-rouge">Read-Only Memory (ROM)</code></li>
-  <li>The CPU starts executing the BIOS/UEFI directly from the ROM.</li>
-</ol>
-
-<h4 id="2-power-on-self-test-post"><span class="me-2">2. Power-On-Self-Test (POST)</span><a href="#2-power-on-self-test-post" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<ol>
-  <li>The BIOS runs a power-on self-test (POST) to check and initialize required devices such as main memory (DRAM), the CPU, the PCI bus and the PCI devices…</li>
-</ol>
-
-<h4 id="3-operating-system-load"><span class="me-2">3. Operating System Load</span><a href="#3-operating-system-load" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<ol>
-  <li>If the POST succeeds, the BIOS loads an MBR Partition Table into the RAM.</li>
-  <li>The BIOS then goes through a pre-configured list of non-volatile storage devices until finds one that is bootable.</li>
-  <li>Typically the primary boot device is the internal Hard Drive or SSD, where the OS is installed.</li>
-</ol>
-
-<h4 id="4-boot-loader-execution"><span class="me-2">4. Boot Loader Execution</span><a href="#4-boot-loader-execution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<ol>
-  <li>The boot loader, such as the Windows Boot Manager (bootmgr), is loaded from the designated boot device into memory.</li>
-  <li>Once it is executed, it loads the Windows kernel (ntoskrnl.exe) into RAM memory and hands over the control.</li>
-  <li>The kernel initializes the Windows executive subsystem and other core components required for the operating system to function.</li>
-</ol>
-
-<h4 id="5-kernel-initialization"><span class="me-2">5. Kernel Initialization</span><a href="#5-kernel-initialization" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<ol>
-  <li>The Windows Kernel initializes various <code class="language-plaintext highlighter-rouge">system services</code>, drivers, and components necessary for system operation.</li>
-  <li>Sets up memory management, initializes hardware drivers, and prepares the system for user interaction.</li>
-</ol>
-
-<h4 id="6-logongraphical-interface"><span class="me-2">6. Logon/Graphical Interface</span><a href="#6-logongraphical-interface" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<ol>
-  <li>The Graphical User Interface (GUI) or login screen is presented to the user.</li>
-  <li>Authentication is required and the Windows Desktop Environment is loaded.</li>
-</ol>
-
-<p><a href="/./assets/img/WindowsMemory/BIOS.jpg" class="popup img-link center shimmer"><img src="/./assets/img/WindowsMemory/BIOS.jpg" alt="Desktop View"  loading="lazy"></a></p>
-
-<h3 id="12-unified-extensible-firmware-interface-uefi"><span class="me-2">1.2 Unified Extensible Firmware Interface (UEFI)</span><a href="#12-unified-extensible-firmware-interface-uefi" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<h4 id="1-uefi-initialization"><span class="me-2">1. UEFI Initialization</span><a href="#1-uefi-initialization" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<ol>
-  <li>When the computer is turned ON, the UEFI firmware initializes.</li>
-  <li>UEFI firmware performs various initialization tasks, such as detecting and initializing hardware components, configuring system settings, and setting up the boot environment.</li>
-</ol>
-
-<h4 id="2-boot-device-selection"><span class="me-2">2. Boot Device Selection</span><a href="#2-boot-device-selection" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<ol>
-  <li>The UEFI firmware locates and prioritizes bootable devices based on the boot order configured in the UEFI settings.</li>
-  <li>Bootable devices include internal storage drives (HDDs/SSDs), external storage devices, optical drives, and network boot options.</li>
-</ol>
-
-<h4 id="3-boot-loader-execution"><span class="me-2">3. Boot Loader Execution</span><a href="#3-boot-loader-execution" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<ol>
-  <li>UEFI firmware loads the boot loader specified in the boot order.</li>
-  <li>The boot loader, often the Windows Boot Manager (bootmgfw.efi) for Windows systems, or GRUB for Linux systems, is responsible for loading the operating system kernel and initiating the boot process.</li>
-</ol>
-
-<h4 id="4-operating-system-loading"><span class="me-2">4. Operating System Loading</span><a href="#4-operating-system-loading" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<ol>
-  <li>Once the boot loader is executed, it loads the operating system kernel (e.g., Windows kernel, Linux kernel) into memory.</li>
-  <li>The kernel initializes the operating system, sets up device drivers, and prepares the system for user interaction.</li>
-</ol>
-
-<h4 id="5-graphical-interface-or-logon"><span class="me-2">5. Graphical Interface or Logon</span><a href="#5-graphical-interface-or-logon" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<ol>
-  <li>Finally, the operating system presents the graphical user interface (GUI) or login screen to the user.</li>
-  <li>If user authentication is required, the user logs in with their credentials.</li>
-  <li>Once logged in, the desktop environment or user interface is loaded, and the user can start using the operating system.</li>
-</ol>
-
-<p><a href="/./assets/img/WindowsMemory/UEFI.jpg" class="popup img-link center shimmer"><img src="/./assets/img/WindowsMemory/UEFI.jpg" alt="Desktop View"  loading="lazy"></a></p>
 
 <h2 id="2-what-is-the-memory-"><span class="me-2">2. What is the Memory ?</span><a href="#2-what-is-the-memory-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
@@ -1320,6 +867,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/BootProcess/">Boot Process</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/ProcessInjection/">Process Injection</a>
         </li>
       
@@ -1354,10 +908,94 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1377,7 +1015,16 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/windows/">windows</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/bios/">bios</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/boot/">boot</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/memory/">Memory</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/uefi/">uefi</a>
       
     </div>
   </section>
@@ -1444,6 +1091,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
 
 
@@ -1492,6 +1151,45 @@
 
 
   As described by MITRE, process injection is a method of executing arbitrary code in the address space of a separate live process. Running code in the context of anothe...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/BootProcess/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1711533600"
+  data-df="ll"
+  
+>
+  Mar 27, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Boot Process</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  1. What does Booting Mean ? 💻
+
+
+  Basic Input/Output System (BIOS) or Unified Extensible Firmware Interface (UEFI) main function is to initialise the hardware components and start the Operating Sys...
                 </p>
               </div>
             </div>
@@ -1598,10 +1296,94 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1621,7 +1403,16 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/windows/">windows</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/bios/">bios</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/boot/">boot</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/memory/">Memory</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/uefi/">uefi</a>
       
     </div>
   </section>
