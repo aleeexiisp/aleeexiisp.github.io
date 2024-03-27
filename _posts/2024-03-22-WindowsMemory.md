@@ -113,6 +113,8 @@ Computers essentially work by making multiple read and write operations. For tha
 
 At this point the computers needed an intermediate Volatile memory in where they could store the running processes temporarily and execute them from that place. That would make the whole running of the application faster. 
 
+## 3. 
+
 
 
 
