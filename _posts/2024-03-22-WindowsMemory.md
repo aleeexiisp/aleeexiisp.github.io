@@ -12,7 +12,9 @@ Everybody knows what the RAM memory is, but how does it work ? In general, compu
 
 Memory is a physical storage used by CPUs to store data that is constantly read. This memory is temporary and is always loaded on each boot. 
 
-Let's first delve into the whole process of memory usage from boot to running the user context to properly understand it. Bear in mind that I will be explaining all complex concepts at the beggining of each section so that everything is made clearer.
+Let's first delve into the whole process of memory usage from boot to running the user context to properly understand it. Bear in mind that I will be explaining all complex concepts at the beggining of each section so that everything is made clearer. 
+
+To begin with, in order to understand memory, it is important to make clear where does it start. How the computers use memory to boot and start ?
 
 ## 1. Booting Process
 
@@ -23,9 +25,9 @@ Let's first delve into the whole process of memory usage from boot to running th
 1. BIOS and Program Setup
 2. Power-On-Self-Test (POST)
 3. Operating System Load
-4. System Configuration
-5. System Utility Loads
-6. Users Authentication
+4. Boot Loader Execution
+5. Kernel Initialization
+6. Logon/Graphical Interface
 
 The following process describes how the BIOS Legacy works. On modern systems, UEFI is utilised and uses different techniques to provide a more secure and efficient boot. I will start explaning BIOS and will expand with UEFI.
 
@@ -104,5 +106,18 @@ The following process describes how the BIOS Legacy works. On modern systems, UE
 3. Once logged in, the desktop environment or user interface is loaded, and the user can start using the operating system.
 
 ![Desktop View](./assets/img/WindowsMemory/UEFI.jpg){: .center}
+
+## 2. What is the Memory ?
+
+Computers essentially work by making multiple read and write operations. For that reason, they need some place to work with that data. This is usually done on the register I mentioned before as they are very quick and efficient although that is the most granual way of speaking about memory. If we go back a bit we realise that computers can manage big chunks of data such as huge videogames, coding applications, etc. They must be stored somewhere, this is known as `Non-Volatile` memory from which we highlight the Solid-state drive (SSD) or the Hard-disk drive (HDD). However, if the computer only used these sort of disks, the operations the application had to do would be very inefficient and heavy weight. 
+
+At this point the computers needed an intermediate Volatile memory in where they could store the running processes temporarily and execute them from that place. That would make the whole running of the application faster. 
+
+
+
+
+
+
+
 
 
