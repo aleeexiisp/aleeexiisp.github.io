@@ -12,45 +12,55 @@ I have been working as a Security Consultant as part of an experienced team. At 
 
 Penetration Tests:
 - Internal Network audits.
-- External Cyber Reviews.
+- External Perimeter Review.
 - Web Application testing.
-- Windows CIS Build Reviews.
-- Attack Surface Reviews
+- Windows / Azure CIS Build Reviews.
+- Attack Surface Reviews/Mapping (ASR)
 - Reporting (templating systems and manual).
 - Client delivery and catch ups.
 - Usual use of Nessus and BurpSuite.
-- Automated monthly scans.
+- Automated monthly scanning and reporting.
 - Phishing campaings.
-- Multiple tools used to audit and evidence findings.
+- Usage of multiple tools for auditing and evidencing.
 - OSCP certified at first attempt while working.
-- QA Process and reporting
+- QA Process and reporting.
+- Cobalt Strike
+- Active Directory:
+	- Kerberos Attacks (Kerberoast, AS-REP Roast, Certificates, Delegations...)
+	- Credential Theft (Mimikatz, TGT, TGS, DPAPI...)
+	- Domain / Host Reconnaissance
+	- Privilege Escalation and Persistance
+	- Pivoting and Lateral Movement
+	
+Cloud:
+- Azure, AWS and Google Cloud testing for misconfigurations.
+- Experience working with the Azure cloud and infrastructure.
+- Experience working with Sharepoint sites, pages, permissions…
+- Resource Group management.
+- Creation of complex Logic Apps.
+- Blog Storages.
+- Pipelines.
+- Dev Operations.
 
 Development:
+- Development of cyber internal tools for daily usage.  
 - Full stack developer for Cybersecurity applications.
 - Multiple automation tasks and programs.
 - Creation of secure APIs with Microsoft Oauth2, SSO.
 - Docker and microservices.
 - Certificate/public-private key managing.
 - Frontend:
- - Pure HTML, CSS, JS.
- - React JS.
+	- Pure HTML, CSS, JS.
+	- React JS, Next JS.
 - Backend:
- - Any language.
- - Python.
- - Golang.
- - Bash scripting.
- - C, C#, C++ (Learnt in university).
- - Relational (SQL) and non-relational (MongoDB) databases managing.
- - Powershell Scripting.
-
-Cloud:
-- Experience working with the Azure cloud and infrastructure.
-- Experience working with Sharepoint sites, pages, permissions…
-- Resource Group management.
-- Creation of complex Logic Apps.
-- Blog Storage
-- Pipelines.
-- Dev Operations.
+	- API Development in Python and Golang.
+	- Any language (Solid programming basis from Uni).
+	- Python.
+	- Golang.
+	- Bash scripting.
+	- C, C#, C++ for exploit development and sharepoint.
+	- Relational (SQL) and non-relational (MongoDB) databases managing.
+	- Powershell Scripting.
 
 # Cybersecurity Certifications
 
@@ -81,8 +91,6 @@ Two subjects with Honors.
 {: .prompt-info }
 
 I studied the technological baccalaureate with the electives: Physics, industrial technology and mathematics.
-
-# Abilities
 
 # Languages
 
