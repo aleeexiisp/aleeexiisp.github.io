@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Alexis' Blog</title>
   <subtitle>Cybersecurity Blog</subtitle>
-  <updated>2024-03-28T12:34:55-04:00</updated>
+  <updated>2024-03-30T19:34:31-04:00</updated>
   <author>
     <name>Alexis Peralta</name>
     <uri>http://localhost:4000/</uri>
@@ -20,23 +20,23 @@
 
   
   <entry>
-    <title>Process Injection</title>
-    <link href="http://localhost:4000/posts/ProcessInjection/" rel="alternate" type="text/html" title="Process Injection" />
-    <published>2024-03-27T10:28:00-04:00</published>
+    <title>CVE-2024-3094</title>
+    <link href="http://localhost:4000/posts/CVE-2024-3094/" rel="alternate" type="text/html" title="CVE-2024-3094" />
+    <published>2024-03-30T06:00:00-04:00</published>
   
-    <updated>2024-03-27T10:28:00-04:00</updated>
+    <updated>2024-03-30T06:00:00-04:00</updated>
   
-    <id>http://localhost:4000/posts/ProcessInjection/</id>
-    <content src="http://localhost:4000/posts/ProcessInjection/" />
+    <id>http://localhost:4000/posts/CVE-2024-3094/</id>
+    <content src="http://localhost:4000/posts/CVE-2024-3094/" />
     <author>
       <name>alexis</name>
     </author>
 
   
     
-    <category term="Windows" />
+    <category term="Hacking" />
     
-    <category term="AVBypass" />
+    <category term="CVE" />
     
   
 
@@ -48,50 +48,11 @@
 
 
 
-      What is Process Injection
+      1. What is the CVE-2024-3094 ?
 
+Recently, a vulnerability was identified in the upstream source code of a file compression format known as XZ (5.6.0 and 5.6.1). Similar to “tar” and other compression formats, it uses an efficient algorithm for compressing files named LZMA.
 
-  As described by MITRE, process injection is a method of executing arbitrary code in the address space of a separate live process. Running code in the context of another process may allow access to the process’s memory, system/network resources, and possibly elevated privileges. Execution via process injection may also evade detection from security products since th...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Windows Memory</title>
-    <link href="http://localhost:4000/posts/WindowsMemory/" rel="alternate" type="text/html" title="Windows Memory" />
-    <published>2024-03-27T10:25:00-04:00</published>
-  
-    <updated>2024-03-27T10:25:00-04:00</updated>
-  
-    <id>http://localhost:4000/posts/WindowsMemory/</id>
-    <content src="http://localhost:4000/posts/WindowsMemory/" />
-    <author>
-      <name>alexis</name>
-    </author>
-
-  
-    
-    <category term="Windows" />
-    
-    <category term="Memory" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      How does the Windows Memory work ?
-
-Everybody knows what the RAM memory is, but how does it work ? In general, computer processors (CPU) are constantly making read and write operations. If this was done on the disk (SSD or HDD) constantly the computer would be very slow. That is why an intermediate place to store data was required.
-
-Memory is a physical storage used by CPUs to store data that i...
+Such vulnerability has been assigned with the CVE-2024-3094 at a criticality of 10 out of 10. The extent of the problem is...
     </summary>
   
 
@@ -134,47 +95,6 @@ Memory is a physical storage used by CPUs to store data that i...
 
 
 Booting is the process of switching the computer ON and starting the op...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Introduction to Hacking</title>
-    <link href="http://localhost:4000/posts/IntroductionToHacking/" rel="alternate" type="text/html" title="Introduction to Hacking" />
-    <published>2024-03-26T06:00:00-04:00</published>
-  
-    <updated>2024-03-26T06:00:00-04:00</updated>
-  
-    <id>http://localhost:4000/posts/IntroductionToHacking/</id>
-    <content src="http://localhost:4000/posts/IntroductionToHacking/" />
-    <author>
-      <name>alexis</name>
-    </author>
-
-  
-    
-    <category term="Hacking" />
-    
-    <category term="Introduction" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      1. What is Hacking ?
-
-There is a general misconception about the term “Hacker”. This concept is often confused with cyber criminals who use the same technical knowledge as hackers for financial gain or other negative purposes. The term Hacker can have multiple meanings, for example this is what Oxford say a Hacker is:
-
-
-  A hacker is a person who uses computers to gain unauthorized access to da...
     </summary>
   
 
